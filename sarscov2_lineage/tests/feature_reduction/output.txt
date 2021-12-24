@@ -1,0 +1,7 @@
+The original logistic regression model used 4546 out of a possible 12680 features
+Training accuracy: 99.3993993993994%
+Testing accuracy: 94.04761904761905%
+Training accuracy: 98.7987987987988%
+Testing accuracy: 95.23809523809523%
+Number of non-zero coefficients in lasso model: 4340
+Lambda decided on by cross validation: 0.01
