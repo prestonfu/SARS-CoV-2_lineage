@@ -1,0 +1,5 @@
+Accuracy: 92.18241042345277%
+                    Asia predicted  North America predicted  Oceania predicted
+Asia true                       25                        9                  4
+North America true               5                      229                  3
+Oceania true                     0                        3                 29
