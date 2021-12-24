@@ -3,12 +3,11 @@ import numpy as np
 
 
 def features_used(lm):
-  # @title #### Example Solution
   coefficients = lm.coef_[0]
   n_possible_features = len(coefficients)
   n_features_used = sum(coefficients != 0)
-  print("The original logistic regression model used %i out of a possible %i features" %
-        (n_features_used, n_possible_features))
+  print("The original logistic regression model used {used} out of a possible {possible} features"
+        .format(used=n_features_used, possible=n_possible_features))
 
 
 def accuracy_compare(lm, X_train, X_test, y_train, y_test):
@@ -17,8 +16,8 @@ def accuracy_compare(lm, X_train, X_test, y_train, y_test):
 
   training_accuracy = 100*np.mean(y_train == y_pred_train)
   testing_accuracy = 100*np.mean(y_test == y_pred_test)
-  print("Training accuracy: ", str(training_accuracy)+"%")
-  print("Testing accuracy: %", str(testing_accuracy)+"%")
+  print("Training accuracy:", str(training_accuracy)+"%")
+  print("Testing accuracy:", str(testing_accuracy)+"%")
 
 
 def train_cv(X_train, X_test, y_train, y_test):
